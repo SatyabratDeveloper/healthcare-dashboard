@@ -3,12 +3,12 @@ import { navLinks } from "../../data/navLinks";
 
 const Sidebar = () => {
   return (
-    <nav className="bg-slate-100/75 h-screen pt-28 pl-16">
+    <nav className="bg-slate-100/75 h-screen pt-24 pl-16">
       {navLinks.map((section, index) => (
         <div key={index}>
           {/* Navigation sections */}
           <p
-            className={`text-sm text-gray-400 font-medium  ${
+            className={`text-sm text-gray-400 font-medium ${
               section.sectionTitle === "Setting" ? "hidden" : "mb-2 mt-8"
             }`}
           >

@@ -4,7 +4,7 @@ import { SearchInput } from "../";
 
 const Header = () => {
   return (
-    <header className="absolute grid grid-cols-[1fr_3fr_3fr] w-full items-center px-16 py-10 gap-8">
+    <header className="absolute grid grid-cols-[1fr_3fr_3.5fr] w-full items-center px-16 py-10">
       {/* Logo */}
       <div className="text-2xl font-bold text-gray-900 cursor-pointer">
         <span className="text-cyan-300">Health</span>
@@ -12,7 +12,7 @@ const Header = () => {
       </div>
 
       {/* Search bar and Notification */}
-      <div className="flex gap-4 justify-center items-center">
+      <div className="flex gap-4 justify-center items-center w-2xl">
         <SearchInput />
         <button className="h-10 w-10 border border-gray-200 hover:border-gray-300 cursor-pointer rounded-lg">
           <Bell className="w-5 h-5 text-indigo-900 fill-indigo-900 m-auto" />
