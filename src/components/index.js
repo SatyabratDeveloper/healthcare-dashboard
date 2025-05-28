@@ -8,6 +8,7 @@ import HealthStatusCard from "./DashboardMainContent/HealthStatusCard/HealthStat
 import ActivityFeed from "./DashboardMainContent/ActivityFeed/ActivityFeed";
 import CalendarView from "./DashboardMainContent/CalendarView/CalendarView";
 import SimpleAppointmentCard from "./DashboardMainContent/SimpleAppointmentCard/SimpleAppointmentCard";
+import UpcomingSchedule from "./DashboardMainContent/UpcomingSchedule/UpcomingSchedule";
 
 export {
   Header,
@@ -20,4 +21,5 @@ export {
   ActivityFeed,
   CalendarView,
   SimpleAppointmentCard,
+  UpcomingSchedule,
 };

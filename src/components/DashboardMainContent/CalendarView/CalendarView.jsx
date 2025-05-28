@@ -35,7 +35,7 @@ const CalendarView = () => {
   return (
     <>
       {/* Month Heading and Navigation */}
-      <div className="flex justify-between items-center mb-7">
+      <div className="flex justify-between items-center mb-7 max-w-2xl">
         <h3 className="text-lg font-semibold text-indigo-900">October 2021</h3>
         <div className="flex gap-4 text-indigo-900">
           <MoveLeft className="w-7 h-7 cursor-pointer" />
@@ -43,7 +43,7 @@ const CalendarView = () => {
         </div>
       </div>
       {/* Calendar */}
-      <div className="grid grid-cols-7">
+      <div className="grid grid-cols-7 max-w-2xl">
         {calendarData.map(({ day, date, slots, activeSlot, dimmed }, idx) => (
           <div
             key={idx}
