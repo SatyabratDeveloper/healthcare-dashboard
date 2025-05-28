@@ -4,7 +4,7 @@ import { SearchX } from "lucide-react";
 
 const AnatomySection = () => {
   return (
-    <section className="relative flex justify-center items-center bg-slate-100/75 rounded-2xl w-76 pt-8 pb-12 ml-5">
+    <section className="relative flex justify-center items-center bg-blue-50/75 rounded-2xl w-76 pt-8 pb-12 ml-5">
       {/* Anatomy Image */}
       <img src={anatomyImage} alt="Human Anatomy" className="h-96" />
       <SearchX className="absolute h-6 w-6 right-5 top-5 text-gray-400 hover:cursor-pointer" />

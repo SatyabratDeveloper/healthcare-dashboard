@@ -1,5 +1,5 @@
 import { ChevronDown, ArrowRight } from "lucide-react";
-import { AnatomySection, HealthStatusCard } from "../";
+import { AnatomySection, HealthStatusCard, ActivityFeed } from "../";
 import lungs from "../../assets/lungs.png";
 import teeth from "../../assets/teeth.png";
 import bone from "../../assets/bone.png";
@@ -48,6 +48,11 @@ const HealthOverviewPanel = () => {
             Details <ArrowRight className="h-3 w-3" />
           </span>
         </div>
+      </div>
+
+      {/* ActivityFeed Section */}
+      <div className="mt-8">
+        <ActivityFeed />
       </div>
     </div>
   );

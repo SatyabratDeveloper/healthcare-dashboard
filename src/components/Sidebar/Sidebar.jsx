@@ -3,7 +3,7 @@ import { navLinks } from "../../data/navLinks";
 
 const Sidebar = () => {
   return (
-    <nav className="bg-slate-100/75 h-screen pt-24 pl-16">
+    <nav className="bg-blue-50/75 h-screen pt-24 pl-16">
       {navLinks.map((section, index) => (
         <div key={index}>
           {/* Navigation sections */}
