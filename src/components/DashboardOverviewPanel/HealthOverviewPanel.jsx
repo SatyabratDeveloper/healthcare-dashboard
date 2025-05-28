@@ -1,5 +1,8 @@
-import { ChevronDown } from "lucide-react";
-import { AnatomySection } from "../";
+import { ChevronDown, ArrowRight } from "lucide-react";
+import { AnatomySection, HealthStatusCard } from "../";
+import lungs from "../../assets/lungs.png";
+import teeth from "../../assets/teeth.png";
+import bone from "../../assets/bone.png";
 
 const HealthOverviewPanel = () => {
   return (
@@ -12,8 +15,40 @@ const HealthOverviewPanel = () => {
         </span>
       </div>
 
-      {/* Anatomy Section */}
-      <AnatomySection />
+      <div className="flex justify-between">
+        {/* Anatomy Section */}
+        <AnatomySection />
+
+        {/* Health Status Card Section */}
+        <div className="mr-5 space-y-3">
+          <HealthStatusCard
+            img={lungs}
+            title="Lungs"
+            date="26 Okt 2021"
+            progress={90}
+            progressColor="#e30000"
+          />
+          <HealthStatusCard
+            img={teeth}
+            title="Teeth"
+            date="26 Okt 2021"
+            progress={60}
+            progressColor="#00c6b8"
+          />
+          <HealthStatusCard
+            img={bone}
+            title="Bone"
+            date="26 Okt 2021"
+            progress={75}
+            progressColor="#ff8200"
+          />
+
+          {/* Details Link */}
+          <span className="flex float-end gap-1.5 items-center text-xs text-indigo-800 font-medium mt-1 -mr-5">
+            Details <ArrowRight className="h-3 w-3" />
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
