@@ -1,4 +1,9 @@
-import { Header, Sidebar, HealthOverviewPanel } from "./components";
+import {
+  Header,
+  Sidebar,
+  HealthOverviewPanel,
+  ScheduleOverviewPanel,
+} from "./components";
 
 function App() {
   return (
@@ -7,6 +12,7 @@ function App() {
       <div className="grid grid-cols-[1fr_3fr_3.5fr]">
         <Sidebar />
         <HealthOverviewPanel />
+        <ScheduleOverviewPanel />
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import ScheduleOverviewPanel from "./DashboardOverviewPanel/ScheduleOverviewPane
 import AnatomySection from "./DashboardMainContent/AnatomySection/AnatomySection";
 import HealthStatusCard from "./DashboardMainContent/HealthStatusCard/HealthStatusCard";
 import ActivityFeed from "./DashboardMainContent/ActivityFeed/ActivityFeed";
+import CalendarView from "./DashboardMainContent/CalendarView/CalendarView";
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   AnatomySection,
   HealthStatusCard,
   ActivityFeed,
+  CalendarView,
 };
