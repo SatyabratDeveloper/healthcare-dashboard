@@ -7,6 +7,7 @@ import AnatomySection from "./DashboardMainContent/AnatomySection/AnatomySection
 import HealthStatusCard from "./DashboardMainContent/HealthStatusCard/HealthStatusCard";
 import ActivityFeed from "./DashboardMainContent/ActivityFeed/ActivityFeed";
 import CalendarView from "./DashboardMainContent/CalendarView/CalendarView";
+import SimpleAppointmentCard from "./DashboardMainContent/SimpleAppointmentCard/SimpleAppointmentCard";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   HealthStatusCard,
   ActivityFeed,
   CalendarView,
+  SimpleAppointmentCard,
 };

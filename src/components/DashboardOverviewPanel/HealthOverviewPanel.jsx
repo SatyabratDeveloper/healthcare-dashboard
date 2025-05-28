@@ -1,8 +1,5 @@
 import { ChevronDown, ArrowRight } from "lucide-react";
 import { AnatomySection, HealthStatusCard, ActivityFeed } from "../";
-import lungs from "../../assets/lungs.png";
-import teeth from "../../assets/teeth.png";
-import bone from "../../assets/bone.png";
 
 const HealthOverviewPanel = () => {
   return (
@@ -22,21 +19,21 @@ const HealthOverviewPanel = () => {
         {/* Health Status Card Section */}
         <div className="mr-5 space-y-3">
           <HealthStatusCard
-            img={lungs}
+            img="🫁"
             title="Lungs"
             date="26 Okt 2021"
             progress={90}
             progressColor="#e30000"
           />
           <HealthStatusCard
-            img={teeth}
+            img="🦷"
             title="Teeth"
             date="26 Okt 2021"
             progress={60}
             progressColor="#00c6b8"
           />
           <HealthStatusCard
-            img={bone}
+            img="🦴"
             title="Bone"
             date="26 Okt 2021"
             progress={75}

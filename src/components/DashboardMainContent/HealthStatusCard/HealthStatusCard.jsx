@@ -2,9 +2,9 @@ import React from "react";
 
 const HealthStatusCard = ({ img, title, date, progress, progressColor }) => {
   return (
-    <div className="bg-blue-50/75 rounded-2xl px-6 pt-2 pb-5 w-60">
+    <div className="bg-blue-50/75 rounded-2xl p-7 w-60">
       <div className="flex items-center gap-2 mb-2">
-        <img src={img} alt={title} className="w-15 h-15" />
+        <span className="text-4xl">{img}</span>
         <h3 className="text-lg font-semibold text-indigo-900">{title}</h3>
       </div>
       <p className="text-xs text-gray-400 mt-1 mb-3">Date: {date}</p>
