@@ -1,8 +1,10 @@
+import { Header } from "./components";
+
 function App() {
   return (
-    <>
-      <h1 className="text-gray-900 text-2xl">Healthcare</h1>
-    </>
+    <div className="min-h-screen">
+      <Header />
+    </div>
   );
 }
 
