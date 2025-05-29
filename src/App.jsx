@@ -7,9 +7,9 @@ import {
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div>
       <Header />
-      <div className="grid grid-cols-[1fr_3fr_3.5fr]">
+      <div className="grid lg:grid-cols-[4fr_11fr_10fr] md:grid-cols-[6fr_5fr]">
         <Sidebar />
         <HealthOverviewPanel />
         <ScheduleOverviewPanel />

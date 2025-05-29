@@ -1,12 +1,13 @@
 import { CalendarView, SimpleAppointmentCard, UpcomingSchedule } from "../";
+import { upcomingAppointments } from "../../data/upcomingAppointments";
 const ScheduleOverviewPanel = () => {
   return (
-    <div className="bg-blue-50/75 pt-32 px-16">
+    <div className="bg-blue-50/75 2xl:pt-28 xl:pt-25 lg:pt-21 md:pt-20 xl:px-10 px-3 pb-5">
       {/* Calendar Section */}
       <CalendarView />
 
       {/* Simple Appointment Section */}
-      <div className="flex gap-4">
+      <div className="flex gap-x-3 gap-y-2 lg:flex-nowrap md:flex-wrap pt-5">
         <SimpleAppointmentCard
           title="Dentist"
           time="09:00-11:00"
@@ -24,48 +25,23 @@ const ScheduleOverviewPanel = () => {
       </div>
 
       {/* Upcoming Schedule */}
-      <div className="mt-5">
-        <div className="text-indigo-900 text-2xl font-semibold">
+      <div className="mt-4">
+        <div className="text-indigo-900 2xl:text-2xl lg:text-xl sm:text-lg text-md font-semibold">
           The Upcoming Schedule
         </div>
 
-        {/* Upcoming Schedule on Thursday */}
-        <div className="text-gray-400 text-xl font-medium pt-6">
-          On Thursday
-        </div>
-        <div className="flex gap-4">
-          <UpcomingSchedule
-            primary="false"
-            title="Health checkup complete"
-            time="11:00 AM"
-            icon="💉"
-          />
-          <UpcomingSchedule
-            primary="false"
-            title="Ophthalmologist"
-            time="14:00 PM"
-            icon="👁️"
-          />
-        </div>
-
-        {/* Upcoming Schedule on Saturday */}
-        <div className="text-gray-400 text-xl font-medium pt-6">
-          On Saturday
-        </div>
-        <div className="flex gap-4">
-          <UpcomingSchedule
-            primary="false"
-            title="Cardiologist"
-            time="12:00 AM"
-            icon="❤️"
-          />
-          <UpcomingSchedule
-            primary="false"
-            title="Neurologist"
-            time="16:00 PM"
-            icon="🧑‍⚕️"
-          />
-        </div>
+        {upcomingAppointments.map((schedule, index) => (
+          <div key={index}>
+            <div className="text-gray-400 2xl:text-xl lg:text-lg sm:text-md text-base font-medium mt-4">
+              On {schedule.day}
+            </div>
+            <div className="flex gap-x-3 gap-y-2 lg:flex-nowrap md:flex-wrap pt-5">
+              {schedule.appointments.map((appointment, idx) => (
+                <UpcomingSchedule key={idx} {...appointment} />
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

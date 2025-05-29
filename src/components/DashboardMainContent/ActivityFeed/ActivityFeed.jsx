@@ -19,17 +19,17 @@ const ActivityFeed = () => {
           3 appointment on this week
         </span>
       </div>
-      <div className="flex justify-between items-end mx-7">
+      <div className="flex justify-between items-end lg:mx-7 mx-5">
         {/* Graphs */}
         {activityData.map((heights, dayIndex) => (
           <div key={dayIndex} className="flex flex-col items-center gap-2">
-            <div className="flex gap-2.5 items-center">
+            <div className="flex xl:gap-2.5 lg:gap-1 md:gap-0.5 gap-1  items-center">
               {heights.map((h, idx) => (
                 <div
                   key={idx}
-                  className={`w-1 rounded-full`}
+                  className={`lg:w-1 w-0.5 rounded-full`}
                   style={{
-                    height: `${h * 1.5}px`,
+                    height: `${h * 1.3}px`,
                     backgroundColor:
                       idx === 0
                         ? "#9ca3af"
